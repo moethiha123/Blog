@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/media-query.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
 <body>
@@ -22,7 +23,8 @@
         <a href="#about">About</a>
         <a href="#product">Products</a>
         <a href="#service">Services</a>
-        <a href="#contact">Contact</a>
+        <a href="#register">Register</a>
+        <a href="#login">Login</a>
       </ul>
       <ul class="social-links">
         <a href=""><i class="fa-brands fa-facebook fa-2xl"></i></a>
@@ -220,9 +222,52 @@
         </div>
       </div>
     </section>
-    <section id="contact" class="contact">
-      <h2 class="title product-title">Contact</h2>
+    <section id="register">
+
+      <div class="main p-5 ">
+        <form class="w-50 m-auto p-5 m-5 shadow">
+
+          <h3 class="ccc">Register Form</h3>
+          <div class="mb-3">
+            <input type="text" placeholder="Name.." name="name" class="form-control">
+          </div>
+          <div class="mb-3">
+            <input type="email" placeholder="Email.." name="email" class="form-control">
+          </div>
+          <div class="mb-3">
+            <input type="password" placeholder="Password.." name="password" class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <textarea name="address" class="form-control" placeholder="Address"></textarea>
+          </div>
+          <input type="submit" value="Register" name="register" class="btn btn-primary ">
+        </form>
+      </div>
+
     </section>
+    <!-- login section -->
+    <section id="login">
+
+      <div class="main p-5 ">
+        <form class="w-50 m-auto p-5 m-5 shadow">
+
+          <h3 class="ccc">Login Form</h3>
+
+          <div class="mb-3">
+            <input type="email" placeholder="Email.." name="email" class="form-control">
+          </div>
+          <div class="mb-3">
+            <input type="password" placeholder="Password.." name="password" class="form-control">
+          </div>
+
+
+          <input type="submit" value="Login" name="login" class="btn btn-primary ">
+        </form>
+      </div>
+
+    </section>
+    <!-- login section -->
   </main>
   <!-- footer section -->
   <footer></footer>

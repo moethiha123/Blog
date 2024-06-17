@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -12,13 +12,14 @@
     color: var(--primary-color);
     scroll-behavior: smooth;
 }
-:root{
+
+:root {
     --primary-color: #79CCB8;
     --secondary-color: #789461;
     --bg-color: #50623A;
     --btn-color: #294B29;
     --white-color: #fff;
-    --black-color:#0c110a;
+    --black-color: #0c110a;
 }
 
 header {
@@ -28,6 +29,7 @@ header {
     overflow-x: hidden;
 
 }
+
 .video {
     position: absolute;
     top: 0;
@@ -38,14 +40,16 @@ header {
     object-fit: fill;
 
 }
-.title{
+
+.title {
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
     font-family: "Poetsen One";
     margin-bottom: 20px;
 }
-nav{
+
+nav {
     position: absolute;
     top: 0;
     left: 0;
@@ -58,10 +62,12 @@ nav{
     justify-content: space-between;
     padding: 0 70px;
 }
+
 .social-links i {
     margin: 0 7px;
 }
-.nav-links a{
+
+.nav-links a {
     background: var(--bg-color);
     padding: 7px 10px;
     border-radius: 11px;
@@ -69,11 +75,13 @@ nav{
     transition: 0.4s;
     margin: 0 5px;
 }
+
 .nav-links a:hover {
     background: var(--bg-color);
     color: #fff;
     box-shadow: inset 0 0 3px 1px var(--secondary-color);
 }
+
 #bars {
     background: var(--bg-color);
     padding: 4px 7px;
@@ -85,22 +93,24 @@ nav{
 }
 
 /* banner */
-.banner{
+.banner {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-38%);
+    transform: translate(-50%, -38%);
     /* background: red; */
     padding: 30px;
     text-align: center;
     width: 90%;
 
 }
-.banner h2{
+
+.banner h2 {
     margin: 10px 0;
     font-size: 4rem;
 }
-.banner p{
+
+.banner p {
     font-size: 1.8rem;
 }
 
@@ -112,125 +122,153 @@ nav{
     border: none;
     box-shadow: inset 0 0 5px var(--primary-color);
 }
-.btn-primary{
+
+.btn-primary {
     background: var(--primary-color);
 }
-section{
+
+section {
     width: 100%;
     min-height: 100vh;
     padding: 35px;
 }
-.about{
+
+.about {
     background: url("../img/bilderboken-rlwE8f8anOc-unsplash.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
-.about-section{
+
+.about-section {
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
-.about-img__container,.about-card{
+
+.about-img__container,
+.about-card {
     flex: 1;
 }
+
 .about-img__container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .about-card {
     background: var(--white-color);
     padding: 30px;
     border-radius: 40px;
 }
-.about-card *{
+
+.about-card * {
     color: var(--black-color);
 }
-.about-title{
+
+.about-title {
     font-size: 2rem;
 }
-.about-description{
+
+.about-description {
     margin: 15px 0;
 }
-.about-img{
+
+.about-img {
     border-radius: 20px;
 }
+
 /* about end */
 /* product start */
-.product{
+.product {
     background: url("../img/visualsofdana-T5pL6ciEn-I-unsplash.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
-.product-title{
+
+.product-title {
     color: var(--white-color);
 }
-.product-section{
+
+.product-section {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
-.product-small-card{
+
+.product-small-card {
     flex: 1 1 16rem;
     background: #fff;
     border-radius: 10px;
     box-shadow: 2px 4px 10px #fff;
 }
-.product-information{
+
+.product-information {
     padding: 10px;
 }
-.product-small-card img{
+
+.product-small-card img {
     width: 100%;
     height: 240px;
     object-fit: cover;
     object-position: center;
 
 }
+
 .product-information * {
     color: var(--black-color);
     text-align: center;
 }
-.product-information h3{
+
+.product-information h3 {
     font-size: 1.3rem;
 }
+
 /* service start */
-.service{
+.service {
     background: url("../img/rhema-kallianpur-uocSnWMhnAs-unsplash.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
+
 .service-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
-.service-card{
+
+.service-card {
     flex: 1 1 20rem;
     height: 300px;
     background: rgb(247, 251, 251);
     position: relative;
     overflow: hidden;
 }
-.service-img,.service-information{
+
+.service-img,
+.service-information {
     position: absolute;
     inset: 0;
 }
-.service-img img{
+
+.service-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
+
 .service-information * {
     color: var(--white-color);
     text-align: center;
     font-size: 1.5rem;
 }
-.service-information{
+
+.service-information {
     /* background: red; */
     display: flex;
     justify-content: center;
@@ -241,16 +279,30 @@ section{
     transition: all 0.6s;
     transform: translateY(-100%);
 }
-.service-card:hover .service-information{
+
+.service-card:hover .service-information {
     background: #54af7074;
     transform: translate(0%);
     /* transform: scale(1); */
 }
+
 /* service section end */
 /* contact section start */
-.contact{
+.contact {
     background: url("../img/visualsofdana-T5pL6ciEn-I-unsplash.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+
+.ti {
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.ccc {
+    font-size: 70px;
+    text-align: center;
+    color: black
 }
